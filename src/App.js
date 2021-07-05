@@ -3,6 +3,8 @@ import './styles/styles.css'
 
 //Importamos los componentes
 import FunctionalComponent from './components/FunctionalComponent';
+// import ClassComponent from './components/ClassComponent' 
+//Descomentamos esta línea cuando queremos que el render muestre el componente de Clase y descomentamos el llamado del componente dentro del código del App.js
 
 //Nos llega una determinada DATA
 var dataReceived = [
@@ -45,6 +47,8 @@ function App() {
       <h2>Soy un texto después del renderizado del FC</h2>
 
       <h2>Soy un texto antes del mapeo</h2>
+
+      {/* Aquí probamos el render con el Funcional Component. Comentamos esta fracción de código cuando rendericemos el Class Component para no generar confusión */}
       {dataReceived.map(person => {
         return(
           <FunctionalComponent
@@ -59,7 +63,21 @@ function App() {
 
       <h2>Soy un texto después del mapeo</h2>
 
-    </div>
+      {/* NOTA: DESCOMENTAR PARA JUGAR CON EL CLASS COMPONENT Y SOLAMENTE COMENTAR LAS LINEAS QUE NO SEAN DE CODIGO PURO
+      Acá llamamos al componente de clase
+      <h2>Un texto antes de importar el ClassComponent con props</h2>
+      {dataReceived.map(person => {
+        return(
+            <ClassComponent 
+            id = { person.id }
+            name = { person.name }
+            rol = { person.rol }
+            camada = { person.camada }
+          />
+        )
+      })}
+      <h2>Otro texto después de importar el ClassComponent con props</h2>*/}
+    </div> 
   );
 }
 
