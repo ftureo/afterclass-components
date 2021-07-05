@@ -1,0 +1,20 @@
+1) Borrar los archivos sin uso. ATención a los warnings
+
+2) Carpetas y style global.
+
+3) Creación e importación de componentes. Comentar el código
+
+4) Renderizando etiquetas y codificación inicial para los componentes. Importar react y al método render para el CC
+
+5) Usando la consola para debugging: Pasarle props a los componentes desde App
+
+6) Devolver los textos a través de props. Utilización de this en el CC
+
+7) Trabajar con el FC y mapear la data. Primero un texto, luego pasando Props (Consola para ver el array en la iteración)
+
+8) Recibir las props en el CF y utilizarlas para renderizar
+
+9) Trabajar con el CC y renderizar a partir de las props
+
+10) Definir un estado a partir de las props. Metodo constructor y super
+Consola y this
